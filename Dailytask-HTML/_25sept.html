@@ -1,0 +1,318 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI project</title>
+</head>
+<body>
+    <!---------------------Header----------------->
+
+     <header>
+        <img src="../images.png/logo.jpeg" alt="logo" height="100">
+        <h1>jistoka</h1>
+        <p>The Future Of Developers</p>
+
+    <!---------------------Navigation-------------->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-----------------Main Content-->
+    <main>
+        <!--Home/Hero Section -->
+        <section id="home">
+            <h2>Build. Learn. Innovate.</h2>
+            <p>
+                welocome to jistoka, a platform created for developer
+                to learn, build projects and explore modern technologies.
+
+            </p>
+
+        </section>
+        <!--About section----------------->
+        <section id="about">
+            <h2>About Jistoka</h2>
+            <p>
+                Jistoka is a developer-focused platform that helps
+                students and developers improve their programming skills,
+                build real-world projects and understand modern
+                development technologies.
+            </p>
+            <h3>Our Mission </h3>
+            <p>
+                Our mission is to make technology learning simple ,
+                practical and accessible for everyone.
+            </p>
+
+        </section>
+       
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <article>
+                <h3>Web development</h3>
+                <p>
+                    Learn and build modern website and web applications.
+                </p>
+
+            </article>
+
+            <article>
+                <h3>Backend Development</h3>
+                <p>
+                    Build powerful backend appication using modern 
+                    programing technologies.
+                </p>
+            </article>
+            <article>
+                <h3>Developer Learning</h3>
+                <p>
+                    learn programming concept through practical
+                    example and projects.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!--Technologies  Section-->
+        <section id="technologies">
+
+            <h2>Technogies We Work With</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>SQL</li>
+                <li>Git & GitHub</li>
+
+            </ul>
+
+        </section>
+
+        <!--projects section-->
+
+        <section id="project">
+
+            <h2>Our Projcts</h2>
+            <article>
+
+                <h3>Employee Management System</h3>
+
+                <p>
+                    A system for managing employee information,
+                    attendance and records.
+                </p>
+                <a href="#">View Projecrt</a>
+            </article>
+
+            <article>
+
+
+                <h3>Student Management System </h3>
+                <p>
+                    A web-based application for managing student
+                    information and academic records.
+                </p>
+            </article>
+            <article>
+
+                <h3>E-Commerce Website</h3>
+
+                <p>
+                    An online shopping platform where users can
+                    explore and purchase products.
+                </p>
+
+                <a href="#">View Project</a>
+
+            </article>
+
+        </section>
+
+
+        <!-- Why Choose Us -->
+        <section>
+
+            <h2>Why Choose Jistoka?</h2>
+
+            <ol>
+                <li>Practical Learning</li>
+                <li>Real-World Projects</li>
+                <li>Modern Technologies</li>
+                <li>Developer Friendly Environment</li>
+                <li>Career-Focused Skills</li>
+            </ol>
+
+        </section>
+
+
+        <!-- Registration / Contact Section -->
+        <section id="contact">
+
+            <h2>Join Jistoka</h2>
+
+            <p>
+                Register with us and start your developer journey.
+            </p>
+
+            <form>
+
+                <label for="name">Full Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="phone">Phone:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                >
+
+                <br><br>
+
+
+                <label for="technology">Interested Technology:</label>
+
+                <select id="technology" name="technology">
+
+                    <option value="">Select Technology</option>
+                    <option value="html">HTML</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="springboot">Spring Boot</option>
+                    <option value="sql">SQL</option>
+
+                </select>
+
+                <br><br>
+
+
+                <p>Learning Mode:</p>
+
+                <input
+                    type="radio"
+                    id="online"
+                    name="mode"
+                    value="online"
+                >
+
+                <label for="online">Online</label>
+
+
+                <input
+                    type="radio"
+                    id="offline"
+                    name="mode"
+                    value="offline"
+                >
+
+                <label for="offline">Offline</label>
+
+                <br><br>
+
+
+                <label for="message">Message:</label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                ></textarea>
+
+                <br><br>
+
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                >
+
+                <label for="terms">
+                    I agree to the terms and conditions
+                </label>
+
+                <br><br>
+
+
+                <button type="submit">
+                    Register
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>Jistoka</h2>
+
+        <p>The Future of Developers</p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#services">Services</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <p>
+            Email:
+            <a href="mailto:info@jistoka.com">
+                info@jistoka.com
+            </a>
+        </p>
+
+        <p>
+            &copy; 2026 Jistoka. All Rights Reserved.
+        </p>
+
+    </footer>
+    
+
+</body>
+</html>

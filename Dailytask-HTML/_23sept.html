@@ -11,17 +11,17 @@
 
         <!--Student Name-->
          <label for="01" for="name">Name: <font color="red">*</font></label>
-        <input type="text" id="01" placeholder="Enter Your Name"  pattern="[A-Za-z ]+" required>
+        <input type="text" name="name" id="01" placeholder="Enter Your Name"  pattern="[A-Za-z ]+" required>
         <br>
         <br>
         <!--Phone -->
 
-        <label  for="02" for="phone no">PhoneNo.</label>
-        <input type="number" id="02" placeholder="Enter Your Phone No">
+        <label  for="02" for="phone_no">PhoneNo.</label>
+        <input type="number" name="phone"  id="02" placeholder="Enter Your Phone No">
          <br><br>
         <!--Email-->
         <label for="email id">Email Id<font color="red">*</font></label>
-        <input type="email" name="email id" id="email id" placeholder="example@gmail.com"  required>
+        <input type="email" name="emailId" id="email id" placeholder="example@gmail.com"  required>
         <br>
         <br>
         <!--DOB-->
@@ -57,7 +57,7 @@
        <br><br>
   
        <!--Blood Group-->
-       <label for="blood group">Blood Group: <font color="red">*</font></label>
+       <label for="blood_group" name="bp" >Blood Group: <font color="red">*</font></label>
        <br> <br>
        <label for="001">
        <input type="radio" id="001" value="o-" name="bloodgroup">O-
@@ -100,7 +100,7 @@
 
 
 
-        <!--Hobbies---------------->
+        <!--------------------Hobbies---------------->
          <label for="">Hobbies:</label>
          <input type="checkbox" name="hobby" value="Cricket">Cricket
          <input type="checkbox" name="hobby" value="Travel">Travel
@@ -109,18 +109,18 @@
         <br><br>
 
 
-        <!--Photo-->
+        <!----------------------------------Photo-->
         <label for="photo">Upload Photo</label>
         <input type="file" name="photo" id="photo" accept="image/*">
         <br><br>
 
-        <!--Term and Condition-->
+        <!--Term and Condition------------------->
         <input type="checkbox" name="" id="terms"  required">
         labe;<label for="terms">I agree to the Term & Conditions</label>
         <br><br>
 
         <input type="reset" value="Reset">
-         <input type="submit" value="Register">
+         <input type="submit"  name="rg" value="Register">
        
 
     </form>
