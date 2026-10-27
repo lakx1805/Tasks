@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM & Events — Lakshay</title>
+    <link rel="stylesheet" href="../Dailytask-CSS/_27oct.css">
+</head>
+<body>
+    <header class="hero">
+        <p class="eyebrow">Daily task · 27 Oct</p>
+        <h1>JavaScript: DOM and Events</h1>
+        <p class="lead">
+            The DOM is the page as a tree of objects. Events are the actions
+            (click, type, submit) that let you change that tree.
+        </p>
+    </header>
+
+    <main class="layout">
+        <!-- 1. Select and change text -->
+        <section class="card" id="select-section">
+            <h2>1. Select elements and change text</h2>
+            <p class="concept">
+                <code>getElementById</code> and <code>querySelector</code> find nodes.
+                <code>textContent</code> changes the words inside them.
+            </p>
+            <p id="greeting">Hello, stranger.</p>
+            <input id="name-input" type="text" placeholder="Type your name">
+            <button id="greet-btn" type="button">Update greeting</button>
+        </section>
+
+        <!-- 2. Create / remove nodes -->
+        <section class="card">
+            <h2>2. Create and remove DOM nodes</h2>
+            <p class="concept">
+                <code>createElement</code>, <code>appendChild</code>, and
+                <code>remove</code> add or delete HTML from the page.
+            </p>
+            <div class="row">
+                <input id="task-input" type="text" placeholder="New task">
+                <button id="add-task-btn" type="button">Add task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- 3. classList and styles -->
+        <section class="card">
+            <h2>3. classList and inline styles</h2>
+            <p class="concept">
+                <code>classList.toggle</code> turns CSS classes on and off.
+                <code>element.style</code> changes one style directly.
+            </p>
+            <div id="theme-box" class="theme-box">This box reacts to buttons.</div>
+            <div class="row">
+                <button id="toggle-theme-btn" type="button">Toggle highlight</button>
+                <button id="random-color-btn" type="button">Random color</button>
+            </div>
+        </section>
+
+        <!-- 4. Common events -->
+        <section class="card">
+            <h2>4. Common events</h2>
+            <p class="concept">
+                Listen with <code>addEventListener(type, handler)</code>.
+                The browser passes an <code>event</code> object.
+            </p>
+            <div class="event-grid">
+                <button id="click-box" type="button">Click me</button>
+                <div id="hover-box" class="hover-box">Hover me</div>
+                <input id="live-input" type="text" placeholder="Type here (input event)">
+            </div>
+            <p id="event-log">Event log: waiting...</p>
+        </section>
+
+        <!-- 5. Keyboard + form submit -->
+        <section class="card">
+            <h2>5. Keyboard and form submit</h2>
+            <p class="concept">
+                <code>keydown</code> reads keys. On forms, call
+                <code>event.preventDefault()</code> so the page does not reload.
+            </p>
+            <form id="note-form">
+                <input id="note-input" type="text" placeholder="Write a note and press Enter">
+                <button type="submit">Save note</button>
+            </form>
+            <p id="last-key">Last key: —</p>
+            <p id="saved-note">Saved note: —</p>
+        </section>
+
+        <!-- 6. Event bubbling + delegation -->
+        <section class="card">
+            <h2>6. Bubbling and event delegation</h2>
+            <p class="concept">
+                Clicks bubble up to parents. One listener on a parent can handle
+                many child buttons via <code>event.target</code>.
+            </p>
+            <div id="color-toolbar">
+                <button type="button" data-color="#ef4444">Red</button>
+                <button type="button" data-color="#22c55e">Green</button>
+                <button type="button" data-color="#3b82f6">Blue</button>
+            </div>
+            <p id="picked-color">Picked color: none</p>
+        </section>
+
+        <!-- 7. querySelectorAll -->
+        <section class="card">
+            <h2>7. querySelectorAll (many elements)</h2>
+            <p class="concept">
+                <code>querySelectorAll</code> returns a list. Loop it to update
+                several nodes at once.
+            </p>
+            <div class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+            <button id="light-stars-btn" type="button">Light all stars</button>
+        </section>
+    </main>
+
+    <script src="../Dailytask-JS/_27oct.js"></script>
+</body>
+</html>
