@@ -1,0 +1,158 @@
+/* =========================
+   BODY
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:beige;
+    color: #333;
+}
+
+
+/* =========================
+   MAIN BIO CONTAINER
+========================= */
+
+.bio-container {
+    width: 70%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+#name {
+    text-align: center;
+    color: #12233f;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+    color: #1e66f5;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border-left: 5px solid #12233f;
+    padding-left: 12px;
+}
+
+
+/* =========================
+   ABOUT ME
+========================= */
+
+#id {
+    color: #12233f;
+}
+
+
+/* =========================
+   PARAGRAPHS
+========================= */
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* =========================
+   INTRO PARAGRAPH
+========================= */
+
+.intro {
+    background-color: #f4f7fb;
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 4px solid #1e66f5;
+}
+
+
+/* =========================
+   HOBBIES LIST
+========================= */
+
+ul {
+    background-color: #f4f7fb;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+li {
+    font-size: 17px;
+    color: #444;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+
+/* =========================
+   HOBBY HOVER EFFECT
+========================= */
+
+li:hover {
+    color: #1e66f5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================
+   GOALS SECTION
+========================= */
+
+.bio-container h2:last-of-type {
+    color: #1e66f5;
+}
+
+.bio-container h2:last-of-type + p {
+    background-color: #eef5ff;
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 4px solid #1e66f5;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+
+    .bio-container {
+        width: 85%;
+        padding: 25px;
+        margin: 25px auto;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p,
+    li {
+        font-size: 15px;
+    }
+}

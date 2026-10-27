@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Segoe UI, Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+.hero,
+.card {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 40px 20px 12px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    color: #94a3b8;
+    margin: 0 0 8px;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.lead,
+.concept {
+    color: #cbd5e1;
+}
+
+.layout {
+    padding: 8px 20px 48px;
+    display: grid;
+    gap: 16px;
+}
+
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+code {
+    background: #0f172a;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.92em;
+}
+
+.row,
+.event-grid,
+#color-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+input,
+button {
+    font: inherit;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    padding: 8px 12px;
+}
+
+input {
+    background: #0f172a;
+    color: #e2e8f0;
+    min-width: 220px;
+}
+
+button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7dd3fc;
+}
+
+#task-list {
+    margin: 12px 0 0;
+    padding-left: 18px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 6px 0;
+}
+
+#task-list button {
+    background: #f87171;
+    color: #0f172a;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.theme-box,
+.hover-box {
+    padding: 16px;
+    border-radius: 10px;
+    background: #334155;
+    margin-bottom: 10px;
+}
+
+.theme-box.highlight {
+    background: #facc15;
+    color: #0f172a;
+}
+
+.hover-box {
+    min-width: 120px;
+    text-align: center;
+}
+
+.stars {
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+    color: #475569;
+}
+
+.star.lit {
+    color: #facc15;
+}
+
+#event-log,
+#last-key,
+#saved-note,
+#picked-color {
+    margin-bottom: 0;
+}

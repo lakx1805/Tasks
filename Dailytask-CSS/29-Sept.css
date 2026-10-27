@@ -1,0 +1,178 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #222;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.page-title {
+    text-align: center;
+    margin: 40px 0;
+    color: #12233f;
+    font-size: 36px;
+}
+
+
+/* =========================
+   CARD CONTAINER
+========================= */
+
+.card-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    width: 260px;
+
+    background-color: white;
+
+    border: 1px solid #dce3ec;
+    border-radius: 12px;
+
+    /* Box Model */
+    padding: 0;
+    margin: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.card img {
+    width: 100%;
+    height: 170px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.card-content {
+    padding: 20px;
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.card-content h2 {
+    color: #1e66f5;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.card-content p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CARD LINK
+========================= */
+
+.card-content a {
+    display: inline-block;
+
+    padding: 9px 16px;
+
+    background-color: #12233f;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LINK HOVER
+========================= */
+
+.card-content a:hover {
+    background-color: greenyellow;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+    }
+}
